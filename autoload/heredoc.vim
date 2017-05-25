@@ -1,7 +1,7 @@
 
 function! heredoc#get_heredoc()
     let l:saved = getpos('.')
-    call search( '<<[A-Z]', 'bW')
+    call search( '<<[a-zA-Z0-9]', 'bW')
     let l:obj_start = line('.')
     let l:marker = getline('.')
     let l:trimmed = substitute(l:marker, '^[^<]\+[<]\+', '', '')
