@@ -3,7 +3,7 @@ if exists('g:loaded_textobj_heredoc') || &compatible
 endif
 let g:loaded_textobj_heredoc = 1
 let s:keepcpo = &compatible
-set compatible&vim
+set cpoptions&vim
 
 
 call textobj#user#plugin('heredoc', {
